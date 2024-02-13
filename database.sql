@@ -1,4 +1,6 @@
-CREATE DATABASE IF NOT EXISTS projekt CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci
+CREATE DATABASE IF NOT EXISTS projekt CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE projekt;
 
 CREATE TABLE IF NOT EXISTS `users` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -34,7 +36,7 @@ PRIMARY KEY (`id`)
 -- example data
 INSERT INTO `users` (`id`, `userName`, `password`, `fullName`, `email`, `dateOfBirth`, `dateOfRegistration`, `status`) VALUES
 (1, 'admin', '$2y$10$D3vRgvRh3PoxiginyNlAEO/rz3nPmDmC2yumcCPZw.RaxPmRFS/pS', 'Jan Kowalski', 'email@example.com', '1999-01-01 00:00:00', '2023-01-10 00:00:00', 2),
-(2, 'adam', '$2y$10$Nl0bl2dKbzjeRv9yhDf2UuD9O975cyZ7I8CExaP5Ar6J85SberOzy', 'Adam Nowak', 'email@test.pl', '1999-01-01 00:00:00', '2023-01-23 00:00:00', 1);
+(9, 'adam', '$2y$10$Nl0bl2dKbzjeRv9yhDf2UuD9O975cyZ7I8CExaP5Ar6J85SberOzy', 'Adam Nowak', 'email@test.pl', '1999-01-01 00:00:00', '2023-01-23 00:00:00', 1);
 
 INSERT INTO `posts` (`id`, `title`, `userId`, `submissionDate`, `description`, `content`, `photoName`) VALUES
 (3, 'Ateny', 1, '2023-01-18 06:50:00', 'Partenon – świątynia poświęcona Atenie Partenos (pol. Atenie Dziewicy) na akropolu ateńskim, wzniesiona w połowie V w. p.n.e. według planów Iktinosa i Kallikratesa pod nadzorem Fidiasza, który wykonał również elementy rzeźbiarskie.', 'Partenon (gr. Παρθενών, Parthenṓn) – świątynia poświęcona Atenie Partenos (pol. Atenie Dziewicy) na akropolu ateńskim, wzniesiona w połowie V w. p.n.e. według planów Iktinosa i Kallikratesa pod nadzorem Fidiasza, który wykonał również elementy rzeźbiarskie. Zbudowana z białego marmuru pentelickiego w zgodzie z porządkiem doryckim, uważana za najdoskonalszy jego przykład.&#34;&#13;&#10;&#13;&#10;Świątynia została wzniesiona z inicjatywy ateńskiego polityka i stratega Peryklesa (ok. 495–429 p.n.e.) w ramach jego programu udekorowania imperialnych Aten finansowanego z budżetu Związku Morskiego. Gmach zastąpił wcześniejszą świątynię zniszczoną przez Persów w 480 roku p.n.e., która z kolei stała w miejscu pierwszego Partenonu z ok. 570 roku p.n.e. w południowo-wschodniej części Akropolu.', 'img_63c8317e7eda0.png'),
