@@ -6,6 +6,7 @@ A site containing travel blog with posts. Users can create an account, log in, e
 1. Launch MySQL server (I used XAMPP MySQL database).
 2. Execute SQL commands from _database.sql_ file into database.
 3. Put _travel-blog_ folder on HTML server (I used XAMPP).
+4. Application will be under address http://localhost/travel-blog/blog.php (If you used XAMPP)
 ### Troubleshooting
 1. If you cannot add posts, change _images_ and _imges_src_ folders permission sets to read/write
 ### Sample data
